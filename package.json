@@ -1,0 +1,33 @@
+{
+  "name": "arithgeo_func",
+  "version": "1.0.0",
+  "description": "Check if an array progression is arithmetic, geometric, neithr or empty",
+  "main": "source/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 source/index.js -o build/index.bundle.js",
+    "test": "mocha --compilers js:babel-core/register tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dheavyman/arithgeo_func.git"
+  },
+  "author": "Justin Nebo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dheavyman/arithgeo_func/issues"
+  },
+  "homepage": "https://github.com/Dheavyman/arithgeo_func#readme",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
